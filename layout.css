@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("Góry-w-Portugalii.jpg");
+    background-size: cover;
+    background-position: 25% 50%;
+    text-align: center;
+    font-size: 50px;
+    color: #4169E1;
+    line-height: 20px;
+    height: 300px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.title1 {
+    display: inline-block;
+    color: green;
+}
+
+.title2 {
+    display: inline-block;
+    color: red;
+}
+
+section {
+    display: flex;
+	padding: 15px 0 0px 0;
+}
+
+section::after {
+    display: table;
+    clear: both;
+}
+
+article {
+    flex: 4;
+    padding: 30px;
+    background-color: #f1f1f1;
+    margin: 5px;
+    border-radius: 25px;
+    text-align: justify;
+}
+
+.Paragraf {
+    display: none;
+}
+
+#strona1 {
+    display: block;
+}
+
+h3 {
+    color: blue;
+    font-size: 25px;
+}
+
+.Podpis_video {
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.flagaPortugalii {
+    margin: 0 20px;
+    padding: 0;
+    max-width: 200px;
+    height: auto;
+}
+
+.flagaWysp {
+    margin: 0 20px;
+    padding: 0;
+    max-width: 300px;
+    height: auto;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    flex: 1;
+    background-color: burlywood;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav li {
+    text-align: center;
+    padding: 5px;
+}
+
+nav ul li a {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: forestgreen;
+}
+
+nav ul li a:active {
+    background-color: forestgreen;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+footer {
+    margin: 20px 5px;
+    text-align: center;
+    background-color: #8F9699;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+#formularz {
+    width: 80%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formularz label {
+    padding: 0 20px;
+}
+
+
+input[type=text], select {
+    max-width: 25%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit], input[type=reset] {
+    max-width: 30%;
+    background-color: darkgray;
+    color: black;
+    display: inline-block;
+    padding: 14px 20px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: orange;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  input[type=text], select {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #formularz label {
+    display: block;
+    padding: 10px;
+  }
+  header {
+    line-height: 40px;
+    font-size: 40px;
+  }
+}
