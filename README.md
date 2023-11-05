@@ -1,3 +1,3 @@
-# Strona internetowa - Portugalskie wyspy
+# Webpage - Portugalskie wyspy
 
-Link do strony: [Portugalskie wyspy](https://damian3ro.github.io/webPage_Lab1/)
+Link to webpage: [Portugalskie wyspy](https://damian3ro.github.io/webPage_Lab1/)
